@@ -18,7 +18,38 @@
             x.innerHTML = "Flamengo";
         }
     </script>
-    <button type="button" onclick="mFuncao()"> Translate </button>
+    <button type="button" onclick="mFuncao();"> Translate </button>
+
+    <script>
+        <p id="debug"> Entrou </p>
+        function trocaImagem(){
+            document.write("<h2>"+document.title+"</h2>")
+            if(elemento.scr.match("bulbon")){
+                elemento.src = "leao1.jpg";
+            }else{
+                elemento.scr= "macaco1.jpg";
+            }
+        }
+    </script>
     
+
+    <p> <img id="myimage" onclick="trocaImagem()" src = "leao1.jpg" width="600" height="380" </p>
+        </br>
+    <button type="button" onclick="trocaImagem();"> Cique aqui para trocar a foto </button>
+
+    <script>
+        function soma(){
+            var e1 = parseInt(document.getElementById("v1").value);
+            var e2 = parseInt(document.getElementById("v2").value);
+            document.getElementById("resp").innerHTML = "Resposta "+(e1+e2);
+        }
+    </script>
+
+    <p>Informe o primeiro numero <input type="text" id="v1"</p>
+    <p>Informe o segundo numero <input type="text" id="v2"</p>
+    <p id=""resp> Resposta: </p>
+
+    <button type="button" onclick="soma();"> Clique aqui para somar</button>
+
 </body>
 </html>
