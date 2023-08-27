@@ -5,6 +5,9 @@ console.log(status);
 var aprovado = true;
 aprovado && console.log("Parabéns!");
 
+var status2 = aprovado ? "certo": "errado";
+console.log(status2);
+
 var mes = 2;
 
 switch(mes){
