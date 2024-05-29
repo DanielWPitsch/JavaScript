@@ -1,0 +1,4 @@
+npx create-expo-app linha
+expo start
+
+npx create-expo-app@latest
