@@ -190,33 +190,103 @@ const ImcBoys3 =
     { x: 36, y: 20.0 }, { x: 37, y: 20.0 }, { x: 38, y: 19.9 }, { x: 39, y: 19.9 },
     { x: 40, y: 19.9 }, { x: 41, y: 19.9 }, { x: 42, y: 19.9 }
   ]
-  const PesoBoysNeg3 =
+const PesoBoysNeg3 =
   [
-
+    { x: 0, y: 2.1 }, { x: 1, y: 2.9 }, { x: 2, y: 3.8 }, { x: 3, y: 4.4 },
+    { x: 4, y: 4.9 }, { x: 5, y: 5.3 }, { x: 6, y: 5.7 }, { x: 7, y: 5.9 },
+    { x: 8, y: 6.2 }, { x: 9, y: 6.4 }, { x: 10, y: 6.6 }, { x: 11, y: 6.8 },
+    { x: 12, y: 6.9 }, { x: 13, y: 7.1 }, { x: 14, y: 7.2 }, { x: 15, y: 7.4 },
+    { x: 16, y: 7.5 }, { x: 17, y: 7.7 }, { x: 18, y: 7.8 }, { x: 19, y: 8.0 },
+    { x: 20, y: 8.1 }, { x: 21, y: 8.2 }, { x: 22, y: 8.4 }, { x: 23, y: 8.5 },
+    { x: 24, y: 8.6 }, { x: 25, y: 8.8 }, { x: 26, y: 8.9 }, { x: 27, y: 9.0 },
+    { x: 28, y: 9.1 }, { x: 29, y: 9.2 }, { x: 30, y: 9.4 }, { x: 31, y: 9.5 },
+    { x: 32, y: 9.6 }, { x: 33, y: 9.7 }, { x: 34, y: 9.8 }, { x: 35, y: 9.9 },
+    { x: 36, y: 10.0 }, { x: 37, y: 10.1 }, { x: 38, y: 10.2 }, { x: 39, y: 10.3 },
+    { x: 40, y: 10.4 }, { x: 41, y: 10.5 }, { x: 42, y: 10.6 }
   ]
-  const PesoBoysNeg2 =
+const PesoBoysNeg2 =
   [
-
+    { x: 0, y: 2.5 }, { x: 1, y: 3.4 }, { x: 2, y: 4.3 }, { x: 3, y: 5.0 },
+    { x: 4, y: 5.6 }, { x: 5, y: 6.0 }, { x: 6, y: 6.4 }, { x: 7, y: 6.7 },
+    { x: 8, y: 6.9 }, { x: 9, y: 7.1 }, { x: 10, y: 7.4 }, { x: 11, y: 7.6 },
+    { x: 12, y: 7.7 }, { x: 13, y: 7.9 }, { x: 14, y: 8.1 }, { x: 15, y: 8.3 },
+    { x: 16, y: 8.4 }, { x: 17, y: 8.6 }, { x: 18, y: 8.8 }, { x: 19, y: 8.9 },
+    { x: 20, y: 9.1 }, { x: 21, y: 9.2 }, { x: 22, y: 9.4 }, { x: 23, y: 9.5 },
+    { x: 24, y: 9.7 }, { x: 25, y: 9.8 }, { x: 26, y: 10.0 }, { x: 27, y: 10.1 },
+    { x: 28, y: 10.2 }, { x: 29, y: 10.4 }, { x: 30, y: 10.5 }, { x: 31, y: 10.7 },
+    { x: 32, y: 10.8 }, { x: 33, y: 10.9 }, { x: 34, y: 11.0 }, { x: 35, y: 11.2 },
+    { x: 36, y: 11.3 }, { x: 37, y: 11.4 }, { x: 38, y: 11.5 }, { x: 39, y: 11.6 },
+    { x: 40, y: 11.8 }, { x: 41, y: 11.9 }, { x: 42, y: 12.0 }
   ]
-  const PesoBoysNeg1 =
+const PesoBoysNeg1 =
   [
-
+    { x: 0, y: 2.9 }, { x: 1, y: 3.9 }, { x: 2, y: 4.9 }, { x: 3, y: 5.7 },
+    { x: 4, y: 6.2 }, { x: 5, y: 6.7 }, { x: 6, y: 7.1 }, { x: 7, y: 7.4 },
+    { x: 8, y: 7.7 }, { x: 9, y: 8.0 }, { x: 10, y: 8.2 }, { x: 11, y: 8.4 },
+    { x: 12, y: 8.6 }, { x: 13, y: 8.8 }, { x: 14, y: 9.0 }, { x: 15, y: 9.2 },
+    { x: 16, y: 9.4 }, { x: 17, y: 9.6 }, { x: 18, y: 9.8 }, { x: 19, y: 10.0 },
+    { x: 20, y: 10.1 }, { x: 21, y: 10.3 }, { x: 22, y: 10.5 }, { x: 23, y: 10.7 },
+    { x: 24, y: 10.8 }, { x: 25, y: 11.0 }, { x: 26, y: 11.2 }, { x: 27, y: 11.3 },
+    { x: 28, y: 11.5 }, { x: 29, y: 11.7 }, { x: 30, y: 11.8 }, { x: 31, y: 12.0 },
+    { x: 32, y: 12.1 }, { x: 33, y: 12.3 }, { x: 34, y: 12.4 }, { x: 35, y: 12.6 },
+    { x: 36, y: 12.7 }, { x: 37, y: 12.9 }, { x: 38, y: 13.0 }, { x: 39, y: 13.1 },
+    { x: 40, y: 13.3 }, { x: 41, y: 13.4 }, { x: 42, y: 13.6 },
   ]
-  const PesoBoys0 =
+const PesoBoys0 =
   [
-
+    { x: 0, y: 3.3 }, { x: 1, y: 4.5 }, { x: 2, y: 5.6 }, { x: 3, y: 6.4 },
+    { x: 4, y: 7.0 }, { x: 5, y: 7.5 }, { x: 6, y: 7.9 }, { x: 7, y: 8.3 },
+    { x: 8, y: 8.6 }, { x: 9, y: 8.9 }, { x: 10, y: 9.2 }, { x: 11, y: 9.4 },
+    { x: 12, y: 9.6 }, { x: 13, y: 9.9 }, { x: 14, y: 10.1 }, { x: 15, y: 10.3 },
+    { x: 16, y: 10.5 }, { x: 17, y: 10.7 }, { x: 18, y: 10.9 }, { x: 19, y: 11.1 },
+    { x: 20, y: 11.3 }, { x: 21, y: 11.5 }, { x: 22, y: 11.8 }, { x: 23, y: 12.0 },
+    { x: 24, y: 12.2 }, { x: 25, y: 12.4 }, { x: 26, y: 12.5 }, { x: 27, y: 12.7 },
+    { x: 28, y: 12.9 }, { x: 29, y: 13.1 }, { x: 30, y: 13.3 }, { x: 31, y: 13.5 },
+    { x: 32, y: 13.7 }, { x: 33, y: 13.8 }, { x: 34, y: 14.0 }, { x: 35, y: 14.2 },
+    { x: 36, y: 14.3 }, { x: 37, y: 14.5 }, { x: 38, y: 14.7 }, { x: 39, y: 14.8 },
+    { x: 40, y: 15.0 }, { x: 41, y: 15.2 }, { x: 42, y: 15.3 }
   ]
-  const PesoBoys1 =
+const PesoBoys1 =
   [
-
+    { x: 0, y: 3.9 }, { x: 1, y: 5.1 }, { x: 2, y: 6.3 }, { x: 3, y: 7.2 },
+    { x: 4, y: 7.8 }, { x: 5, y: 8.4 }, { x: 6, y: 8.8 }, { x: 7, y: 9.2 },
+    { x: 8, y: 9.6 }, { x: 9, y: 9.9 }, { x: 10, y: 10.2 }, { x: 11, y: 10.5 },
+    { x: 12, y: 10.8 }, { x: 13, y: 11.0 }, { x: 14, y: 11.3 }, { x: 15, y: 11.5 },
+    { x: 16, y: 11.7 }, { x: 17, y: 12.0 }, { x: 18, y: 12.2 }, { x: 19, y: 12.5 },
+    { x: 20, y: 12.7 }, { x: 21, y: 12.9 }, { x: 22, y: 13.2 }, { x: 23, y: 13.4 },
+    { x: 24, y: 13.6 }, { x: 25, y: 13.9 }, { x: 26, y: 14.1 }, { x: 27, y: 14.3 },
+    { x: 28, y: 14.5 }, { x: 29, y: 14.8 }, { x: 30, y: 15.0 }, { x: 31, y: 15.2 },
+    { x: 32, y: 15.4 }, { x: 33, y: 15.6 }, { x: 34, y: 15.8 }, { x: 35, y: 16.0 },
+    { x: 36, y: 16.2 }, { x: 37, y: 16.4 }, { x: 38, y: 16.6 }, { x: 39, y: 16.8 },
+    { x: 40, y: 17.0 }, { x: 41, y: 17.2 }, { x: 42, y: 17.4 }
   ]
-  const PesoBoys2 =
+const PesoBoys2 =
   [
-
+    { x: 0, y: 4.4 }, { x: 1, y: 5.8 }, { x: 2, y: 7.1 }, { x: 3, y: 8.0 },
+    { x: 4, y: 8.7 }, { x: 5, y: 9.3 }, { x: 6, y: 9.8 }, { x: 7, y: 10.3 },
+    { x: 8, y: 10.7 }, { x: 9, y: 11.0 }, { x: 10, y: 11.4 }, { x: 11, y: 11.7 },
+    { x: 12, y: 12.0 }, { x: 13, y: 12.3 }, { x: 14, y: 12.6 }, { x: 15, y: 12.8 },
+    { x: 16, y: 13.1 }, { x: 17, y: 13.4 }, { x: 18, y: 13.7 }, { x: 19, y: 13.9 },
+    { x: 20, y: 14.2 }, { x: 21, y: 14.5 }, { x: 22, y: 14.7 }, { x: 23, y: 15.0 },
+    { x: 24, y: 15.3 }, { x: 25, y: 15.5 }, { x: 26, y: 15.8 }, { x: 27, y: 16.1 },
+    { x: 28, y: 16.3 }, { x: 29, y: 16.6 }, { x: 30, y: 16.9 }, { x: 31, y: 17.1 },
+    { x: 32, y: 17.4 }, { x: 33, y: 17.6 }, { x: 34, y: 17.8 }, { x: 35, y: 18.1 },
+    { x: 36, y: 18.3 }, { x: 37, y: 18.6 }, { x: 38, y: 18.8 }, { x: 39, y: 19.0 },
+    { x: 40, y: 19.3 }, { x: 41, y: 19.5 }, { x: 42, y: 19.7 }
   ]
-  const PesoBoys3 =
+const PesoBoys3 =
   [
-    
+    { x: 0, y: 5.0 }, { x: 1, y: 6.6 }, { x: 2, y: 8.0 }, { x: 3, y: 9.0 },
+    { x: 4, y: 9.7 }, { x: 5, y: 10.4 }, { x: 6, y: 10.9 }, { x: 7, y: 11.4 },
+    { x: 8, y: 11.9 }, { x: 9, y: 12.3 }, { x: 10, y: 12.7 }, { x: 11, y: 13.0 },
+    { x: 12, y: 13.3 }, { x: 13, y: 13.7 }, { x: 14, y: 14.0 }, { x: 15, y: 14.3 },
+    { x: 16, y: 14.6 }, { x: 17, y: 14.9 }, { x: 18, y: 15.3 }, { x: 19, y: 15.6 },
+    { x: 20, y: 15.9 }, { x: 21, y: 16.2 }, { x: 22, y: 16.5 }, { x: 23, y: 16.8 },
+    { x: 24, y: 17.1 }, { x: 25, y: 17.5 }, { x: 26, y: 17.8 }, { x: 27, y: 18.1 },
+    { x: 28, y: 18.4 }, { x: 29, y: 18.7 }, { x: 30, y: 19.0 }, { x: 31, y: 19.3 },
+    { x: 32, y: 19.6 }, { x: 33, y: 19.9 }, { x: 34, y: 20.2 }, { x: 35, y: 20.4 },
+    { x: 36, y: 20.7 }, { x: 37, y: 21.0 }, { x: 38, y: 21.3 }, { x: 39, y: 21.6 },
+    { x: 40, y: 21.9 }, { x: 41, y: 22.1 }, { x: 42, y: 22.4 }
   ]
 
 export default function App() {
@@ -240,22 +310,41 @@ export default function App() {
     //   </Chart>
     // </View>
 
+    // <View style={styles.container}>
+    //   <Chart
+    //     style={{ height: 200, width: '100%', backgroundColor: '#eee' }}
+    //     xDomain={{ min: 0, max: 42 }}
+    //     yDomain={{ min: 9, max: 23 }}
+    //     padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
+    //   >
+    //     <VerticalAxis tickValues={[10, 12.5, 15, 17.5, 20, 22.5]} />
+    //     <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
+    //     <Line data={ImcBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1 } }} />
+    //     <Line data={ImcBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
+    //     <Line data={ImcBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} />
+    //     <Line data={ImcBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1 } }} />
+    //     <Line data={ImcBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} />
+    //     <Line data={ImcBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
+    //     <Line data={ImcBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1 } }} />
+    //   </Chart>
+    // </View>
+
     <View style={styles.container}>
       <Chart
         style={{ height: 200, width: '100%', backgroundColor: '#eee' }}
         xDomain={{ min: 0, max: 42 }}
-        yDomain={{ min: 9, max: 23 }}
+        yDomain={{ min: 0, max: 23 }}
         padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
       >
-        <VerticalAxis tickValues={[10,12.5, 15, 17.5, 20, 22.5]} />
+        <VerticalAxis tickValues={[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]} />
         <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
-        <Line data={ImcBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1 } }} />
-        <Line data={ImcBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
-        <Line data={ImcBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} />
-        <Line data={ImcBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1 } }} />
-        <Line data={ImcBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} />
-        <Line data={ImcBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
-        <Line data={ImcBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1 } }} />
+        <Line data={PesoBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1 } }} />
+        <Line data={PesoBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
+        {/* <Line data={PesoBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} /> */}
+        <Line data={PesoBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1 } }} />
+        {/* <Line data={PesoBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} /> */}
+        <Line data={PesoBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
+        <Line data={PesoBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1 } }} />
       </Chart>
     </View>
   );
