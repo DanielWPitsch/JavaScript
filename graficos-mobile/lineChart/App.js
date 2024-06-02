@@ -288,6 +288,105 @@ const PesoBoys3 =
     { x: 36, y: 20.7 }, { x: 37, y: 21.0 }, { x: 38, y: 21.3 }, { x: 39, y: 21.6 },
     { x: 40, y: 21.9 }, { x: 41, y: 22.1 }, { x: 42, y: 22.4 }
   ]
+const AlturaBoysNeg3 =
+  [
+    { x: 0, y: 44.2 }, { x: 1, y: 48.9 }, { x: 2, y: 52.4 }, { x: 3, y: 55.3 },
+    { x: 4, y: 57.6 }, { x: 5, y: 59.6 }, { x: 6, y: 61.2 }, { x: 7, y: 62.7 },
+    { x: 8, y: 64.0 }, { x: 9, y: 65.2 }, { x: 10, y: 66.4 }, { x: 11, y: 67.6 },
+    { x: 12, y: 68.6 }, { x: 13, y: 69.6 }, { x: 14, y: 70.6 }, { x: 15, y: 71.6 },
+    { x: 16, y: 72.5 }, { x: 17, y: 73.3 }, { x: 18, y: 74.2 }, { x: 19, y: 75.0 },
+    { x: 20, y: 75.8 }, { x: 21, y: 76.5 }, { x: 22, y: 77.2 }, { x: 23, y: 78.0 },
+    { x: 24, y: 78.7 }, { x: 25, y: 78.0 }, { x: 26, y: 78.6 }, { x: 27, y: 79.3 },
+    { x: 28, y: 79.9 }, { x: 29, y: 80.5 }, { x: 30, y: 81.1 }, { x: 31, y: 81.7 },
+    { x: 32, y: 82.3 }, { x: 33, y: 82.8 }, { x: 34, y: 83.4 }, { x: 35, y: 83.9 },
+    { x: 36, y: 84.4 }, { x: 37, y: 85.0 }, { x: 38, y: 85.5 }, { x: 39, y: 86.0 },
+    { x: 40, y: 86.5 }, { x: 41, y: 87.0 }, { x: 42, y: 87.5 }
+  ]
+const AlturaBoysNeg2 =
+  [
+    { x: 0, y: 46.1 },
+    { x: 1, y: 50.8 }, { x: 2, y: 54.4 }, { x: 3, y: 57.3 }, { x: 4, y: 59.7 },
+    { x: 5, y: 61.7 }, { x: 6, y: 63.3 }, { x: 7, y: 64.8 }, { x: 8, y: 66.2 },
+    { x: 9, y: 67.5 }, { x: 10, y: 68.7 }, { x: 11, y: 69.9 }, { x: 12, y: 71.0 },
+    { x: 13, y: 72.1 }, { x: 14, y: 73.1 }, { x: 15, y: 74.1 }, { x: 16, y: 75.0 },
+    { x: 17, y: 76.0 }, { x: 18, y: 76.9 }, { x: 19, y: 77.7 }, { x: 20, y: 78.6 },
+    { x: 21, y: 79.4 }, { x: 22, y: 80.2 }, { x: 23, y: 81.0 }, { x: 24, y: 81.7 },
+    { x: 25, y: 81.0 }, { x: 26, y: 81.7 }, { x: 27, y: 82.5 }, { x: 28, y: 83.1 },
+    { x: 29, y: 83.8 }, { x: 30, y: 84.5 }, { x: 31, y: 85.1 }, { x: 32, y: 85.7 },
+    { x: 33, y: 86.4 }, { x: 34, y: 86.9 }, { x: 35, y: 87.5 }, { x: 36, y: 88.1 },
+    { x: 37, y: 88.7 }, { x: 38, y: 89.2 }, { x: 39, y: 89.8 }, { x: 40, y: 90.3 },
+    { x: 41, y: 90.9 }, { x: 42, y: 91.4 }
+  ]
+const AlturaBoysNeg1 =
+  [
+    { x: 0, y: 48.0 }, { x: 1, y: 52.8 }, { x: 2, y: 56.4 }, { x: 3, y: 59.4 },
+    { x: 4, y: 61.8 }, { x: 5, y: 63.8 }, { x: 6, y: 65.5 }, { x: 7, y: 67.0 },
+    { x: 8, y: 68.4 }, { x: 9, y: 69.7 }, { x: 10, y: 71.0 }, { x: 11, y: 72.2 },
+    { x: 12, y: 73.4 }, { x: 13, y: 74.5 }, { x: 14, y: 75.6 }, { x: 15, y: 76.6 },
+    { x: 16, y: 77.6 }, { x: 17, y: 78.6 }, { x: 18, y: 79.6 }, { x: 19, y: 80.5 },
+    { x: 20, y: 81.4 }, { x: 21, y: 82.3 }, { x: 22, y: 83.1 }, { x: 23, y: 83.9 },
+    { x: 24, y: 84.8 }, { x: 25, y: 84.1 }, { x: 26, y: 84.9 }, { x: 27, y: 85.6 },
+    { x: 28, y: 86.4 }, { x: 29, y: 87.1 }, { x: 30, y: 87.8 }, { x: 31, y: 88.5 },
+    { x: 32, y: 89.2 }, { x: 33, y: 89.9 }, { x: 34, y: 90.5 }, { x: 35, y: 91.1 },
+    { x: 36, y: 91.8 }, { x: 37, y: 92.4 }, { x: 38, y: 93.0 }, { x: 39, y: 93.6 },
+    { x: 40, y: 94.2 }, { x: 41, y: 94.7 }, { x: 42, y: 95.3 }
+  ]
+const AlturaBoys0 =
+  [
+    { x: 0, y: 49.9 }, { x: 1, y: 54.7 }, { x: 2, y: 58.4 }, { x: 3, y: 61.4 },
+    { x: 4, y: 63.9 }, { x: 5, y: 65.9 }, { x: 6, y: 67.6 }, { x: 7, y: 69.2 },
+    { x: 8, y: 70.6 }, { x: 9, y: 72.0 }, { x: 10, y: 73.3 }, { x: 11, y: 74.5 },
+    { x: 12, y: 75.7 }, { x: 13, y: 76.9 }, { x: 14, y: 78.0 }, { x: 15, y: 79.1 },
+    { x: 16, y: 80.2 }, { x: 17, y: 81.2 }, { x: 18, y: 82.3 }, { x: 19, y: 83.2 },
+    { x: 20, y: 84.2 }, { x: 21, y: 85.1 }, { x: 22, y: 86.0 }, { x: 23, y: 86.9 },
+    { x: 24, y: 87.8 }, { x: 25, y: 87.1 }, { x: 26, y: 88.0 }, { x: 27, y: 88.8 },
+    { x: 28, y: 89.6 }, { x: 29, y: 90.4 }, { x: 30, y: 91.2 }, { x: 31, y: 91.9 },
+    { x: 32, y: 92.7 }, { x: 33, y: 93.4 }, { x: 34, y: 94.1 }, { x: 35, y: 94.8 },
+    { x: 36, y: 95.4 }, { x: 37, y: 96.1 }, { x: 38, y: 96.7 }, { x: 39, y: 97.4 },
+    { x: 40, y: 98.0 }, { x: 41, y: 98.6 }, { x: 42, y: 99.2 },
+  ]
+const AlturaBoys1 =
+  [
+    { x: 0, y: 51.8 }, { x: 1, y: 56.7 }, { x: 2, y: 60.4 }, { x: 3, y: 63.5 },
+    { x: 4, y: 66.0 }, { x: 5, y: 68.0 }, { x: 6, y: 69.8 }, { x: 7, y: 71.3 },
+    { x: 8, y: 72.8 }, { x: 9, y: 74.2 }, { x: 10, y: 75.6 }, { x: 11, y: 76.9 },
+    { x: 12, y: 78.1 }, { x: 13, y: 79.3 }, { x: 14, y: 80.5 }, { x: 15, y: 81.7 },
+    { x: 16, y: 82.8 }, { x: 17, y: 83.9 }, { x: 18, y: 85.0 }, { x: 19, y: 86.0 },
+    { x: 20, y: 87.0 }, { x: 21, y: 88.0 }, { x: 22, y: 89.0 }, { x: 23, y: 89.9 },
+    { x: 24, y: 90.9 }, { x: 25, y: 90.2 }, { x: 26, y: 91.1 }, { x: 27, y: 92.0 },
+    { x: 28, y: 92.9 }, { x: 29, y: 93.7 }, { x: 30, y: 94.5 }, { x: 31, y: 95.3 },
+    { x: 32, y: 96.1 }, { x: 33, y: 96.9 }, { x: 34, y: 97.6 }, { x: 35, y: 98.4 },
+    { x: 36, y: 99.1 }, { x: 37, y: 99.8 }, { x: 38, y: 100.5 }, { x: 39, y: 101.2 },
+    { x: 40, y: 101.8 }, { x: 41, y: 102.5 }, { x: 42, y: 103.2 }
+  ]
+const AlturaBoys2 =
+  [
+    { x: 0, y: 53.7 }, { x: 1, y: 58.6 }, { x: 2, y: 62.4 }, { x: 3, y: 65.5 },
+    { x: 4, y: 68.0 }, { x: 5, y: 70.1 }, { x: 6, y: 71.9 }, { x: 7, y: 73.5 },
+    { x: 8, y: 75.0 }, { x: 9, y: 76.5 }, { x: 10, y: 77.9 }, { x: 11, y: 79.2 },
+    { x: 12, y: 80.5 }, { x: 13, y: 81.8 }, { x: 14, y: 83.0 }, { x: 15, y: 84.2 },
+    { x: 16, y: 85.4 }, { x: 17, y: 86.5 }, { x: 18, y: 87.7 }, { x: 19, y: 88.8 },
+    { x: 20, y: 89.8 }, { x: 21, y: 90.9 }, { x: 22, y: 91.9 }, { x: 23, y: 92.9 },
+    { x: 24, y: 93.9 }, { x: 25, y: 93.2 }, { x: 26, y: 94.2 }, { x: 27, y: 95.2 },
+    { x: 28, y: 96.1 }, { x: 29, y: 97.0 }, { x: 30, y: 97.9 }, { x: 31, y: 98.7 },
+    { x: 32, y: 99.6 }, { x: 33, y: 100.4 }, { x: 34, y: 101.2 }, { x: 35, y: 102.0 },
+    { x: 36, y: 102.7 }, { x: 37, y: 103.5 }, { x: 38, y: 104.2 }, { x: 39, y: 105.0 },
+    { x: 40, y: 105.7 }, { x: 41, y: 106.4 }, { x: 42, y: 107.1 },
+  ]
+const AlturaBoys3 =
+  [
+    { x: 0, y: 55.6 }, { x: 1, y: 60.6 }, { x: 2, y: 64.4 }, { x: 3, y: 67.6 },
+    { x: 4, y: 70.1 }, { x: 5, y: 72.2 }, { x: 6, y: 74.0 }, { x: 7, y: 75.7 },
+    { x: 8, y: 77.2 }, { x: 9, y: 78.7 }, { x: 10, y: 80.1 }, { x: 11, y: 81.5 },
+    { x: 12, y: 82.9 }, { x: 13, y: 84.2 }, { x: 14, y: 85.5 }, { x: 15, y: 86.7 },
+    { x: 16, y: 88.0 }, { x: 17, y: 89.2 }, { x: 18, y: 90.4 }, { x: 19, y: 91.5 },
+    { x: 20, y: 92.6 }, { x: 21, y: 93.8 }, { x: 22, y: 94.9 }, { x: 23, y: 95.9 },
+    { x: 24, y: 97.0 }, { x: 25, y: 96.3 }, { x: 26, y: 97.3 }, { x: 27, y: 98.3 },
+    { x: 28, y: 99.3 }, { x: 29, y: 100.3 }, { x: 30, y: 101.2 }, { x: 31, y: 102.1 },
+    { x: 32, y: 103.0 }, { x: 33, y: 103.9 }, { x: 34, y: 104.8 }, { x: 35, y: 105.6 },
+    { x: 36, y: 106.4 }, { x: 37, y: 107.2 }, { x: 38, y: 108.0 }, { x: 39, y: 108.8 },
+    { x: 40, y: 109.5 }, { x: 41, y: 110.3 }, { x: 42, y: 111.0 },
+  ]
 
 export default function App() {
   return (
@@ -331,20 +430,20 @@ export default function App() {
 
     <View style={styles.container}>
       <Chart
-        style={{ height: 200, width: '100%', backgroundColor: '#eee' }}
+        style={{ height: 200, width: '100%', backgroundColor: 'white' }}
         xDomain={{ min: 0, max: 42 }}
-        yDomain={{ min: 0, max: 23 }}
+        yDomain={{ min: 43, max: 115 }}
         padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
       >
-        <VerticalAxis tickValues={[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]} />
+        <VerticalAxis tickValues={[45, 55, 65, 75, 85, 95, 105, 115]} />
         <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
-        <Line data={PesoBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1 } }} />
-        <Line data={PesoBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
-        {/* <Line data={PesoBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} /> */}
-        <Line data={PesoBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1 } }} />
-        {/* <Line data={PesoBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} /> */}
-        <Line data={PesoBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
-        <Line data={PesoBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1 } }} />
+        <Line data={AlturaBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1 } }} />
+        <Line data={AlturaBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
+        {/* <Line data={AlturaBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} /> */}
+        <Line data={AlturaBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1 } }} />
+        {/* <Line data={AlturaBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} /> */}
+        <Line data={AlturaBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
+        <Line data={AlturaBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1 } }} />
       </Chart>
     </View>
   );
