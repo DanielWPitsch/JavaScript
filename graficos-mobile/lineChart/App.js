@@ -428,6 +428,26 @@ export default function App() {
     //   </Chart>
     // </View>
 
+    // <Chart
+    //     style={{ height: 200, width: '100%', backgroundColor: '#eee' }}
+    //     xDomain={{ min: 0, max: 42 }}
+    //     yDomain={{ min: 9, max: 23 }}
+    //     yDomain={{ min: 0, max: 23 }}
+    //     padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
+    //   >
+    //     <VerticalAxis tickValues={[10,12.5, 15, 17.5, 20, 22.5]} />
+    //     <VerticalAxis tickValues={[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]} />
+    //     <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
+    //     <Line data={PesoBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1 } }} />
+    //     <Line data={PesoBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
+    //     {/* <Line data={PesoBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} /> */}
+    //     <Line data={PesoBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1 } }} />
+    //     {/* <Line data={PesoBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} /> */}
+    //     <Line data={PesoBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
+    //     <Line data={PesoBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1 } }} />
+    //   </Chart>
+    // </View>
+
     <View style={styles.container}>
       <Chart
         style={{ height: 200, width: '100%', backgroundColor: 'white' }}
