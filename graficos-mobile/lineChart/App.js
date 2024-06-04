@@ -1,93 +1,173 @@
-import { StyleSheet, View } from 'react-native';
-import { Chart, VerticalAxis, HorizontalAxis, Line } from 'react-native-responsive-linechart'
+import { StyleSheet, View, ScrollView, Text } from 'react-native';
+import { Chart, VerticalAxis, HorizontalAxis, Line } from 'react-native-responsive-linechart';
 import {
   AlturaBoysNeg3, AlturaBoysNeg2, AlturaBoys0, AlturaBoys2, AlturaBoys3,
   ImcBoysNeg3, ImcBoysNeg2, ImcBoysNeg1, ImcBoys0, ImcBoys1, ImcBoys2, ImcBoys3,
   PerimetroBoysNeg3, PerimetroBoysNeg2, PerimetroBoysNeg1, PerimetroBoys0, PerimetroBoys1, PerimetroBoys2, PerimetroBoys3,
-  PesoBoysNeg3, PesoBoysNeg2, PesoBoysNeg1, PesoBoys0, PesoBoys1, PesoBoys2, PesoBoys3,
+  PesoBoysNeg3, PesoBoysNeg2, PesoBoys0, PesoBoys2, PesoBoys3,
   AlturaGirlsNeg3, AlturaGirlsNeg2, AlturaGirlsNeg1, AlturaGirls0, AlturaGirls1, AlturaGirls2, AlturaGirls3,
   ImcGirlsNeg3, ImcGirlsNeg2, ImcGirlsNeg1, ImcGirls0, ImcGirls1, ImcGirls2, ImcGirls3,
   PerimetroGirlsNeg3, PerimetroGirlsNeg2, PerimetroGirlsNeg1, PerimetroGirls0, PerimetroGirls1, PerimetroGirls2, PerimetroGirls3,
   PesoGirlsNeg3, PesoGirlsNeg2, PesoGirlsNeg1, PesoGirls0, PesoGirls1, PesoGirls2, PesoGirls3
 } from './dados.js';
 
-
 export default function App() {
   return (
-    // <View style={styles.container}>
-    //   <Chart
-    //     style={{ height: 200, width: '100%', backgroundColor: '#eee' }}
-    //     xDomain={{ min: 0, max: 42 }}
-    //     yDomain={{ min: 29, max: 55 }}
-    //     padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
-    //   >
-    //     <VerticalAxis tickValues={[5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]} />
-    //     <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
-    //     <Line data={PerimetroBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1 } }} />
-    //     <Line data={PerimetroBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
-    //     <Line data={PerimetroBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} />
-    //     <Line data={PerimetroBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1 } }} />
-    //     <Line data={PerimetroBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} />
-    //     <Line data={PerimetroBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
-    //     <Line data={PerimetroBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1 } }} />
-    //   </Chart>
-    // </View>
+    <ScrollView style={styles.container}>
+      <Text style={styles.chartFirstTitle}> Gráficos dos Meninos </Text>
+      <Text style={styles.chartTitle}> Perimetro Cefálico </Text>
+      <View style={styles.chartContainer}>
+        <Chart
+          style={styles.chart}
+          xDomain={{ min: 0, max: 42 }}
+          yDomain={{ min: 29, max: 55 }}
+          padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
+        >
+          <VerticalAxis tickValues={[5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]} />
+          <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
+          <Line data={PerimetroBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+          <Line data={PerimetroBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={PerimetroBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1.7 } }} />
+          <Line data={PerimetroBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
+          <Line data={PerimetroBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1.7 } }} />
+          <Line data={PerimetroBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={PerimetroBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+        </Chart>
+      </View>
 
-    // <View style={styles.container}>
-    //   <Chart
-    //     style={{ height: 200, width: '100%', backgroundColor: '#eee' }}
-    //     xDomain={{ min: 0, max: 42 }}
-    //     yDomain={{ min: 9, max: 23 }}
-    //     padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
-    //   >
-    //     <VerticalAxis tickValues={[10, 12.5, 15, 17.5, 20, 22.5]} />
-    //     <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
-    //     <Line data={ImcBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1 } }} />
-    //     <Line data={ImcBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
-    //     <Line data={ImcBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} />
-    //     <Line data={ImcBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1 } }} />
-    //     <Line data={ImcBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} />
-    //     <Line data={ImcBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
-    //     <Line data={ImcBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1 } }} />
-    //   </Chart>
-    // </View>
+      <View style={styles.chartContainer}>
+        <Text style={styles.chartTitle}> Indice de Massa Corporal </Text>
+        <Chart
+          style={styles.chart}
+          xDomain={{ min: 0, max: 42 }}
+          yDomain={{ min: 9, max: 23 }}
+          padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
+        >
+          <VerticalAxis tickValues={[10, 12.5, 15, 17.5, 20, 22.5]} />
+          <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
+          <Line data={ImcBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+          <Line data={ImcBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={ImcBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1.7 } }} />
+          <Line data={ImcBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
+          <Line data={ImcBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1.7 } }} />
+          <Line data={ImcBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={ImcBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+        </Chart>
+      </View>
 
-    // <Chart
-    //     style={{ height: 200, width: '100%', backgroundColor: '#eee' }}
-    //     xDomain={{ min: 0, max: 42 }}
-    //     yDomain={{ min: 9, max: 23 }}
-    //     yDomain={{ min: 0, max: 23 }}
-    //     padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
-    //   >
-    //     <VerticalAxis tickValues={[10,12.5, 15, 17.5, 20, 22.5]} />
-    //     <VerticalAxis tickValues={[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]} />
-    //     <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
-    //     <Line data={PesoBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1 } }} />
-    //     <Line data={PesoBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
-    //     {/* <Line data={PesoBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} /> */}
-    //     <Line data={PesoBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1 } }} />
-    //     {/* <Line data={PesoBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1 } }} /> */}
-    //     <Line data={PesoBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1 } }} />
-    //     <Line data={PesoBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1 } }} />
-    //   </Chart>
-    // </View>
+      <View style={styles.chartContainer}>
+        <Text style={styles.chartTitle}> Peso </Text>
+        <Chart
+          style={styles.chart}
+          xDomain={{ min: 0, max: 42 }}
+          yDomain={{ min: 0, max: 23 }}
+          padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
+        >
+          <VerticalAxis tickValues={[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]} />
+          <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
+          <Line data={PesoBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+          <Line data={PesoBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={PesoBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
+          <Line data={PesoBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={PesoBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+        </Chart>
+      </View>
 
-    <View style={styles.container}>
-      <Chart
-        style={{ height: 200, width: '100%', backgroundColor: 'white' }}
-        xDomain={{ min: 0, max: 42 }}
-        yDomain={{ min: 43, max: 115 }}
-        padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
-      >
-        <VerticalAxis tickValues={[45, 55, 65, 75, 85, 95, 105, 115]} />
-        <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
-        <Line data={AlturaBoysNeg3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
-        <Line data={AlturaBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
-        <Line data={AlturaBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
-        <Line data={AlturaBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
-        <Line data={AlturaBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
-      </Chart>
-    </View>
+      <View style={styles.chartContainer}>
+        <Text style={styles.chartTitle}> Altura </Text>
+        <Chart
+          style={styles.chart}
+          xDomain={{ min: 0, max: 42 }}
+          yDomain={{ min: 43, max: 115 }}
+          padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
+        >
+          <VerticalAxis tickValues={[45, 55, 65, 75, 85, 95, 105, 115]} />
+          <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
+          <Line data={AlturaBoysNeg3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+          <Line data={AlturaBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={AlturaBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
+          <Line data={AlturaBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={AlturaBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+        </Chart>
+      </View>
+
+      <Text style={styles.chartFirstTitle}> Gráficos das Meninas </Text>
+      <Text style={styles.chartTitle}> Perimetro Cefálico </Text>
+      <View style={styles.chartContainer}>
+        <Chart
+          style={styles.chart}
+          xDomain={{ min: 0, max: 42 }}
+          yDomain={{ min: 29, max: 55 }}
+          padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
+        >
+          <VerticalAxis tickValues={[5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]} />
+          <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
+          <Line data={PerimetroGirlsNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+          <Line data={PerimetroGirlsNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={PerimetroGirlsNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1.7 } }} />
+          <Line data={PerimetroGirls0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
+          <Line data={PerimetroGirls1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1.7 } }} />
+          <Line data={PerimetroGirls2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={PerimetroGirls3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+        </Chart>
+      </View>
+
+      <View style={styles.chartContainer}>
+        <Text style={styles.chartTitle}> Indice de Massa Corporal </Text>
+        <Chart
+          style={styles.chart}
+          xDomain={{ min: 0, max: 42 }}
+          yDomain={{ min: 9, max: 23 }}
+          padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
+        >
+          <VerticalAxis tickValues={[10, 12.5, 15, 17.5, 20, 22.5]} />
+          <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
+          <Line data={ImcGirlsNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+          <Line data={ImcGirlsNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={ImcGirlsNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1.7 } }} />
+          <Line data={ImcGirls0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
+          <Line data={ImcGirls1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1.7 } }} />
+          <Line data={ImcGirls2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={ImcGirls3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+        </Chart>
+      </View>
+
+      <View style={styles.chartContainer}>
+        <Text style={styles.chartTitle}> Peso </Text>
+        <Chart
+          style={styles.chart}
+          xDomain={{ min: 0, max: 42 }}
+          yDomain={{ min: 0, max: 23 }}
+          padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
+        >
+          <VerticalAxis tickValues={[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]} />
+          <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
+          <Line data={PesoGirlsNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+          <Line data={PesoGirlsNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={PesoGirls0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
+          <Line data={PesoGirls2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={PesoGirls3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+        </Chart>
+      </View>
+
+      <View style={styles.chartContainer}>
+        <Text style={styles.chartTitle}> Altura </Text>
+        <Chart
+          style={styles.chart}
+          xDomain={{ min: 0, max: 42 }}
+          yDomain={{ min: 43, max: 115 }}
+          padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
+        >
+          <VerticalAxis tickValues={[45, 55, 65, 75, 85, 95, 105, 115]} />
+          <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
+          <Line data={AlturaGirlsNeg3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+          <Line data={AlturaGirlsNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={AlturaGirls0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
+          <Line data={AlturaGirls2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
+          <Line data={AlturaGirls3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
+        </Chart>
+      </View>
+    </ScrollView>
   );
 }
 
@@ -95,7 +175,28 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
+  chartContainer: {
+    marginVertical: 2,
+  },
+  chart: {
+    height: 200,
+    width: '100%',
+    backgroundColor: '#eee',
+  },
+  chartFirstTitle: {
+    marginTop: 50,
+    fontSize: 30,
+    textAlign: 'center',
+    color: 'black',
+    fontWeight: 'bold',
+    marginVertical: 10,
+  },
+  chartTitle: {
+    fontSize: 16,
+    textAlign: 'center',
+    color: 'blue',
+    fontWeight: 'bold',
+    marginVertical: 10,
+  }
 });
