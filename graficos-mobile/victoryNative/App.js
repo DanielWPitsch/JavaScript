@@ -32,6 +32,7 @@ export default function App() {
       defaultValue: ''
     }
   })
+
   const animatedTextMes = useAnimatedProps(() => {
     return {
       text: 'Mês $(state.x.value.value)',
@@ -41,7 +42,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <View style={{ width: '80%', height: 100 }}>
+      <View style={{ width: '100%', height: 250 }}>
 
         {isActive && (
           <View>
@@ -77,8 +78,6 @@ export default function App() {
             font: font,
             labelOffset: { x: 4, y: 2 },
             labelPosition: "outset",
-            formatYLabel: (value) => '$(value)',
-            formatXLabel: (value) => value.toFixed(1)
           }}
         >
           {({ points }) => (
