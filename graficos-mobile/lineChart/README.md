@@ -9,7 +9,7 @@ https://react-native-responsive-linechart.surge.sh/docs/
 
 rodei:
 
-npx create-expo-app NomeDoProjeto --template blank
+npx create-expo-app NomeDoProjeto --template blank \n
 cd NomeDoProjeto
 npm install react-native-responsive-linechart
 npm install react-native-chart-kit react-native-svg
