@@ -5,10 +5,10 @@ import {
   ImcBoysNeg3, ImcBoysNeg2, ImcBoysNeg1, ImcBoys0, ImcBoys1, ImcBoys2, ImcBoys3,
   PerimetroBoysNeg3, PerimetroBoysNeg2, PerimetroBoysNeg1, PerimetroBoys0, PerimetroBoys1, PerimetroBoys2, PerimetroBoys3,
   PesoBoysNeg3, PesoBoysNeg2, PesoBoys0, PesoBoys2, PesoBoys3,
-  AlturaGirlsNeg3, AlturaGirlsNeg2, AlturaGirlsNeg1, AlturaGirls0, AlturaGirls1, AlturaGirls2, AlturaGirls3,
+  AlturaGirlsNeg3, AlturaGirlsNeg2, AlturaGirls0, AlturaGirls2, AlturaGirls3,
   ImcGirlsNeg3, ImcGirlsNeg2, ImcGirlsNeg1, ImcGirls0, ImcGirls1, ImcGirls2, ImcGirls3,
   PerimetroGirlsNeg3, PerimetroGirlsNeg2, PerimetroGirlsNeg1, PerimetroGirls0, PerimetroGirls1, PerimetroGirls2, PerimetroGirls3,
-  PesoGirlsNeg3, PesoGirlsNeg2, PesoGirlsNeg1, PesoGirls0, PesoGirls1, PesoGirls2, PesoGirls3
+  PesoGirlsNeg3, PesoGirlsNeg2, PesoGirls0, PesoGirls2, PesoGirls3
 } from './dados.js';
 
 export default function App() {
