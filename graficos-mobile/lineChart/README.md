@@ -17,3 +17,5 @@ npx expo start
 
 
 scaneei com ExpoGo no celular e pronto
+
+./1.jpg
