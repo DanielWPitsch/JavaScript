@@ -18,4 +18,4 @@ npx expo start
 
 scaneei com ExpoGo no celular e pronto
 
-/1.jpg
+(https://github.com/DanielWPitsch/JavaScript/blob/main/graficos-mobile/lineChart/1.jpg)
