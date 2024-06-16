@@ -16,6 +16,8 @@ npm install react-native-chart-kit react-native-svg
 npx expo start
 
 
-scaneei com ExpoGo no celular e pronto
+scanneando com ExpoGo no celular ou na web
 
 (https://github.com/DanielWPitsch/JavaScript/blob/main/graficos-mobile/lineChart/1.jpg)
+(https://github.com/DanielWPitsch/JavaScript/blob/main/graficos-mobile/lineChart/2.jpg)
+(https://github.com/DanielWPitsch/JavaScript/blob/main/graficos-mobile/lineChart/3.jpg)
