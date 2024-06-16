@@ -11,17 +11,28 @@ import {
   PesoGirlsNeg3, PesoGirlsNeg2, PesoGirls0, PesoGirls2, PesoGirls3
 } from './dados.js';
 
+import {
+  AlturaBoysAcima, AlturaBoysMuitoAcima, AlturaBoysAbaixo, AlturaBoysMuitoAbaixo,
+  PesoBoysMuitoAbaixo, PesoBoysAbaixo, PesoBoysAcima, PesoBoysMuitoAcima,
+  PerimetroBoysMuitoAcima, PerimetroBoysAcima, PerimetroBoysLevementeAcima,
+  PerimetroBoysLevementeAbaixo, PerimetroBoysAbaixo, PerimetroBoysMuitoAbaixo,
+  ImcBoysMuitoAcima, ImcBoysAcima, ImcBoysLevementeAcima, ImcBoysLevementeAbaixo,
+  ImcBoysAbaixo, ImcBoysMuitoAbaixo
+} from './teste.js';
+
 export default function App() {
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.chartFirstTitle}> Gráficos dos Meninos </Text>
       <Text style={styles.chartTitle}> Perimetro Cefálico </Text>
+
       <View style={styles.chartContainer}>
         <Chart
           style={styles.chart}
           xDomain={{ min: 0, max: 42 }}
           yDomain={{ min: 29, max: 55 }}
           padding={{ left: 30, top: 20, bottom: 30, right: 20 }}
+
         >
           <VerticalAxis tickValues={[5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]} />
           <HorizontalAxis tickValues={[0, 1, 2, 4, 6, 9, 12, 15, 18, 24, 30, 36, 42]} />
@@ -29,6 +40,14 @@ export default function App() {
           <Line data={PerimetroBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
           <Line data={PerimetroBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1.7 } }} />
           <Line data={PerimetroBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
+          <Line data={PerimetroBoysMuitoAbaixo} smoothing="cubic-spline" theme={
+            {
+              stroke: { color: 'blue', width: 1.7 },
+              scatter: {
+                default: { width: 4, height: 4, rx: 4, color: 'blue' },
+                selected: { color: 'red' },
+              }
+            }} />
           <Line data={PerimetroBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1.7 } }} />
           <Line data={PerimetroBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
           <Line data={PerimetroBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
@@ -49,6 +68,14 @@ export default function App() {
           <Line data={ImcBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
           <Line data={ImcBoysNeg1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1.7 } }} />
           <Line data={ImcBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
+          <Line data={ImcBoysMuitoAbaixo} smoothing="cubic-spline" theme={
+            {
+              stroke: { color: 'blue', width: 1.7 },
+              scatter: {
+                default: { width: 4, height: 4, rx: 4, color: 'blue' },
+                selected: { color: 'red' },
+              }
+            }} />
           <Line data={ImcBoys1} smoothing="cubic-spline" theme={{ stroke: { color: 'orange', width: 1.7 } }} />
           <Line data={ImcBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
           <Line data={ImcBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
@@ -68,6 +95,14 @@ export default function App() {
           <Line data={PesoBoysNeg3} smoothing="none" theme={{ stroke: { color: 'black', width: 1.7 } }} />
           <Line data={PesoBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
           <Line data={PesoBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
+          <Line data={PesoBoysMuitoAcima} smoothing="cubic-spline" theme={
+            {
+              stroke: { color: 'blue', width: 1.7 },
+              scatter: {
+                default: { width: 4, height: 4, rx: 4, color: 'blue' },
+                selected: { color: 'red' },
+              }
+            }} />
           <Line data={PesoBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
           <Line data={PesoBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
         </Chart>
@@ -86,6 +121,14 @@ export default function App() {
           <Line data={AlturaBoysNeg3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
           <Line data={AlturaBoysNeg2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
           <Line data={AlturaBoys0} smoothing="cubic-spline" theme={{ stroke: { color: 'green', width: 1.7 } }} />
+          <Line data={AlturaBoysMuitoAcima} smoothing="cubic-spline" theme={
+            {
+              stroke: { color: 'blue', width: 1.7 },
+              scatter: {
+                default: { width: 4, height: 4, rx: 4, color: 'blue' },
+                selected: { color: 'red' },
+              }
+            }} />
           <Line data={AlturaBoys2} smoothing="cubic-spline" theme={{ stroke: { color: 'red', width: 1.7 } }} />
           <Line data={AlturaBoys3} smoothing="cubic-spline" theme={{ stroke: { color: 'black', width: 1.7 } }} />
         </Chart>
