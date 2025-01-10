@@ -202,3 +202,28 @@ function cadastrar(usuarios, ...novosUsuarios){
 
 let usuarios = ["Eu", "Tu"];
 let novosUsuarios = cadastrar(usuarios, "Ele", "Nós");
+
+//                          MAP e REDUCE
+
+const lista2 =[1,2,3,4,5];
+
+const novaLista = lista2.map(function(item){
+    return item *5;
+});
+
+console.log(novaLista);
+
+const soma = lista2.reduce(function(total, proximo){
+    return total + proximo;
+});
+
+console.log(soma);
+
+const find = lista2.find(function(item){
+    return item === 5;
+});
+
+console.log(find);
+
+//                          FUNCOES ANONIMAS
+
