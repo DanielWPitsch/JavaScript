@@ -92,3 +92,16 @@ switch(opc){
         alert("opcao invalida");
 }
 */
+
+//                            TEMPORIZADOR
+
+function acao(){
+    document.write("Execitando...<br/>");
+}
+
+// executa de 1 em 1 segundo
+//var timer = setInterval(acao, 1000);
+//clearInterval(timer);
+
+//setTimeout(acao, 3000);
+
