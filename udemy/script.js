@@ -266,3 +266,20 @@ console.log(meu.startsWith("D"));
 
 //                          metodos some e every
 
+nomes2.some(nomes2 => nomes2 === "Eu");
+
+const pessoa3 =
+[
+    {nome:"Daniel", sobrenome: "wp", idade: 43,},
+    {nome:"Elder", sobrenome: "ot", idade: 33,},
+    {nome:"Arthur", sobrenome: "sq", idade: 23,},
+    {nome:"Well", sobrenome: "ps", idade: 63,},
+];
+
+pessoa3.every(nome => nome.idade >= 18);
+
+if(pessoa3.every(nome => nome.idade >= 18)){
+    console.log("Todos sao maiores de 18");
+}else{
+    console.log("Alguém é de menor")
+}
