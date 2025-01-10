@@ -253,5 +253,16 @@ function adicionar(...numeros){
 
 adicionar(1,2,3,4,5);
 
-//                          FUNCOES ANONIMAS
+//                          Includes , endsWith, startsWith
+// é case sensitive
+
+let nomes2 = ["Eu", "tu", "ele"];
+
+console.log(nomes2.includes("tu"));
+
+let meu = "daniel";
+console.log(meu.endsWith("l"));
+console.log(meu.startsWith("D"));
+
+//                          metodos some e every
 
