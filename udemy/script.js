@@ -161,3 +161,27 @@ let alunos = ["marretinha", "Guts", "Ela"];
 
 //viram as chaves dos respectivos atributos
 let[aluno1, aluno2, aluno3] = alunos;
+
+//                          SPREAD OPERATOR
+
+let primeiros = [1, 2, 3];
+let numeros = [...primeiros, 4, 5, 6];
+
+let novapessoa = {
+    ...pessoa2,
+    anoAtual: 2025,
+    cidade: "JP"
+};
+
+function cadastroPessoa(info){
+    let novosDados = {
+        ...info,
+        cargo: "programador",
+        status: 1
+    };
+    return novosDados;
+}
+
+console.log(cadastroPessoa({nome: "Daniel", sobrenome: "wp", anoInicio:2025}));
+
+//                          REST OPERATOR
