@@ -185,3 +185,20 @@ function cadastroPessoa(info){
 console.log(cadastroPessoa({nome: "Daniel", sobrenome: "wp", anoInicio:2025}));
 
 //                          REST OPERATOR
+
+function minhaLista(...nomes){
+    console.log(nomes);
+}
+
+minhaLista("Eu", "Tu", "Ele");
+
+function cadastrar(usuarios, ...novosUsuarios){
+    let totalusuarios = [
+        ...usuarios,
+        ...novosUsuarios
+    ];
+    return console.log(totalusuarios);
+}
+
+let usuarios = ["Eu", "Tu"];
+let novosUsuarios = cadastrar(usuarios, "Ele", "Nós");
