@@ -139,3 +139,25 @@ let sobrenome = "Pitsch";
 const pi = 3.14;
 
 let pessoa = `Meu nome é ${nome} ${sobrenome} e eu tenho ${idade} anos`;
+
+//                     OBJETOS
+
+const pessoa2 ={
+    nome:"Daniel",
+    sobrenome: "wp",
+    idade: 33,
+    cargo: "desenvolvedor"
+};
+
+//troca a chave cargo por programador, mas não muda no objeto
+let {cargo:programador} = pessoa2;
+
+let nomes = ["daniel", "warella"]
+
+let{1:segundonome} = nomes;
+let{0:eu, 1:sNome} = nomes;
+
+let alunos = ["marretinha", "Guts", "Ela"];
+
+//viram as chaves dos respectivos atributos
+let[aluno1, aluno2, aluno3] = alunos;
