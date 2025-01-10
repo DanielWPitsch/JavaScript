@@ -105,3 +105,37 @@ function acao(){
 
 //setTimeout(acao, 3000);
 
+
+//                             WEB STORAGE
+
+//parametros sao chave e valor
+localStorage.setItem("nome", "Daniel");
+
+//usando a chave traz o valor
+localStorage.getItem("nome");
+
+localStorage.removeItem("nome");
+
+var web= 'oxe';
+
+//localStorage.getItem("webstorage");
+if(typeof localStorage.web == 'undefined' || typeof localStorage.web == null){
+    localStorage.web = prompt("Digite seu nome: ");
+}
+
+web = localStorage.web;
+
+alert(web);
+
+//document.getElementById("web").innerHTML = web;
+
+localStorage.lista2 = ["daniel", 23];
+
+//sessionStorage tem a mesma pegada
+
+// o  let é de escopo local
+let sobrenome = "Pitsch";
+
+const pi = 3.14;
+
+let pessoa = `Meu nome é ${nome} ${sobrenome} e eu tenho ${idade} anos`;
