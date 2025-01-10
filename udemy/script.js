@@ -62,3 +62,33 @@ if(lista.indexOf("Elder") > -1){
 }
 */
 var x =0;
+
+//                             LOOPS
+
+/*
+while(x < 10){
+    document.write("</br> O valor do x é: " + x);
+    x++;
+}*/
+
+for (a = 0; a < 10; a++){
+    document.write("</br> O valor do a é: " + a);
+}
+
+/*
+var opc= prompt("Qual a opcao?");
+
+switch(opc){
+    case "0":
+        alert("A opcao foi 0");
+        break;
+    case "1":
+        alert("A opcao foi 1");
+        break;
+    case "2":
+        alert("A opcao foi 2");
+        break;
+    default:
+        alert("opcao invalida");
+}
+*/
