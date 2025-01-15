@@ -1,17 +1,51 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, {Component} from 'react';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+class Membro extends Component{
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  constructor(props){
+    super(props);
+    this.state = {
+        nome: props.nome
+    };
+
+    this.entrar = this.entrar.bind(this);
+  }
+
+  entrar(){
+    this.setState({nome: 'Daniel'})
+  }
+
+
+  render(){
+    return(
+      <div>
+        <h2> Bem-vindo {this.state.nome} </h2>
+        <button onClick={this.entrar}>
+          Entrar como Daniel
+        </button>
+        <button onClick={ ()=> this.setState({nome: ''})}>
+          Sair
+        </button>
+      </div>
+    );
+  }
+}
+
+export default Membro;
+
+
+//App.js
+// import React, {Component} from 'react';
+// import Membro from './components/Membro';
+
+// class App extends Component{
+//   render(){
+//     return(
+//       <div>
+//         <Membro nome='visitante'/>
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
